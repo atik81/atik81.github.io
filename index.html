@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-enquiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+  <div id="header"> 
+    <div class="container">
+      <nav>
+        <img src="image/log.png" class="logo">
+        <ul>
+      
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#"> Contact</a></li>
+
+        </ul>
+      </nav>
+      <div class="header-text">
+        <div class="container">
+          <div class="row">
+            <div class="header-text-col-1">
+              
+            </div>
+          </div>
+        </div>
+        <p>Frontend Developer</p>
+        <h1>Hi, I'm <span>Muhammad</span> <br> Atikujjaman From England </h1>
+        <h1></h1>
+      </div>
+    </div>
+    
+  </div>
+  
+  <!---------------about--------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/prof.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a passionate frontend developer with
+             a love for creating beautiful and interactive websites.
+              I have a strong foundation in JavaScript, HTML, and CSS,
+               allowing me to bring designs to life and provide engaging user
+                experiences. Additionally, my knowledge of SQL enables 
+                me to work with databases effectively. 
+                 also have experience with Python and basic familiarity 
+              with C# and C++.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('work experience')">Work Experience</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Basic knowledge of C# and C++</li>
+              </ul>
+              
+
+
+
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>September 2021 - Current</span>
+                <br>Completed second year at Roehampton University</li>
+                <li><span>February 2021 - July 2021</span>
+                <br> Completed International Foundation Year (Computer Science and Engineering) at Kingston University           
+                </li>
+                <li><span> April 2017 - April 2019 </span>
+                <br> Completed Higher Secondary School Certificate at BAF  Shaheen College ,Sylhet , Bangladesh </li>
+              </ul>
+
+
+
+            </div>
+            <div class="tab-contents" id="work experience">
+              <ul>
+                <li><span>November 2021 - Current</span><br> Healthcare Advisor at Boots Pharmacy, 21-23 St john's road ,London </li>
+                <li><span>July 2021 - November 2021</span><br> Waiter at Akash Tandoori Restaurent , 70 Northcode Road,London        
+                </li>
+                <li><span> March 2021 - July 2021 </span>
+                <br> Sales Assistant at Food & Drink Store, Tooting bec, London </li>
+  
+               </ul>
+            </div>
+            
+          </div>          
+        </div>
+
+      </div>   
+    </div>
+  </div>
+
+  <!------------------------services_-------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services </h1>
+      <div class="services-list">
+        <div>
+          <h2>Web Design</h2>
+          <p>Hello! I am available to create various types of websites and assist with data management. Whether you need a website for a restaurant, cafe, online business, or a personal portfolio, I am here to help.
+            I have good idea in HTML, CSS, JavaScript,
+             and SQL, allowing me to build dynamic and visually appealing websites.
+            Whether you need a responsive design, 
+            interactive features, or a seamless user experience, I can bring your ideas to life.
+            From designing the layout to implementing functionality,
+             I will ensure your website is tailored to your specific needs and goals.
+          </p>
+        </div>
+        <div>
+          <h2>Teaching and Assistance:</h2>
+          <p>If you encounter any issues with HTML, CSS, JavaScript, or SQL, I am available to provide guidance and teach you the necessary concepts.
+            Whether you are a beginner or need advanced assistance, I can help you overcome challenges and improve your skills.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab (tabname){
+      for(tablink of tablinks ){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents ){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  </body>
+</html>
