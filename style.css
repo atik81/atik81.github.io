@@ -186,12 +186,13 @@ nav ul li a:hover::after{
   width: 100%;
   border-radius: 10px;
   display: block;
+  transition: transform 0.5s;
 }
 .layer{
   width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-  border-radius: 15px;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), #3b0593);
+  border-radius: 10px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -202,5 +203,80 @@ nav ul li a:hover::after{
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
+  font-size: 12px;
+  transition: hight 0.5s;
 
+
+}
+.layer h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ededef;
+  font: bold;
+}
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+
+}
+
+.project:hover img{
+  transform: scale(1.1);
+} 
+.project:hover .layer{
+ height: 100%;
+} 
+/*----------------------contact------*/
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+
+}
+.contact-left p{
+  margin-top: 28px;
+}
+.contact-left p i{
+  color: #5d09e3;
+  margin-right: 20px;
+
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+
+}
+.social-icons a:hover{
+  color: #4206d8;
+  transform: translateY(-5px);
+
+}
+.btn.btn2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b0593;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.btn2:hover {
+  background-color: #3b0593;
 }
