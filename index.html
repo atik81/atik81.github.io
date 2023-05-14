@@ -14,15 +14,16 @@
     <div class="container">
       <nav>
         <img src="image/log.png" class="logo">
-        <ul>
+        <ul id="sidemenu">
       
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#"> Contact</a></li>
-
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact"> Contact</a></li>
+          <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <div class="container">
@@ -224,9 +225,9 @@
         <div class="contact-right">
           <form>
             <input type="text" name="Name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
+            <input type="Email" name="Email" placeholder="Your email" required>
             <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
+            <button type="submit" class="btn btn3">Submit</button>
 
           </form>
         </div>
@@ -252,5 +253,15 @@
       document.getElementById(tabname).classList.add("active-tab");
     }
   </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right ="0";
+    }
+    function closemenu(){
+      sidemenu.style.right ="-200px";
+    }
+  </script>
+
   </body>
 </html>
